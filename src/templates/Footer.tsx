@@ -60,7 +60,7 @@ const Footer = () => (
           <Link href="/">Accueil</Link>
         </li>
         <li>
-          <Link href="/">Vêtement</Link>
+          <Link href="/marques">Marques</Link>
         </li>
         <li>
           <Link href="/">À propos</Link>

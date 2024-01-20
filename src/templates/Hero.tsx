@@ -1,3 +1,4 @@
+import { Typography } from '@mui/material';
 import Link from 'next/link';
 
 import { Background } from '../background/Background';
@@ -12,20 +13,24 @@ const Hero = () => (
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
         <li>
-          <Link href="/">Sign in</Link>
+          <Link href="/marques">
+            <Typography variant="h5" mb={2} fontWeight="bold">
+              Marques
+            </Typography>
+          </Link>
         </li>
       </NavbarTwoColumns>
     </Section>
 
-    <Section yPadding="pt-20 pb-32">
+    <Section yPadding="pt-6 pb-3">
       <HeroOneButton
         title={
           <>
-            {'Le magasin de la mode\n'}
-            <span className="text-primary-500">Oronde</span>
+            {'Bienvenue sur le site de la mode \n'}
+            <span className="text-primary-600">Oronde</span>
           </>
         }
-        description="L'élégance est un tout, et ce qui ne se voit pas compte autant que ce qui se voit."
+        description="où chaque vêtement raconte une histoire d'élégance. Car chez nous, l'élégance ne se limite pas à ce qui se voit, mais englobe également la beauté cachée dans chaque détail."
         button={
           <Link href="/">
             <Button xl>Découvrez notre collection</Button>
